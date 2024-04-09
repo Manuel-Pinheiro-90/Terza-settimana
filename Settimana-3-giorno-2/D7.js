@@ -120,9 +120,9 @@ console.log("Array incrementato di", n, ":", risultatoIncremento);
 
 var odio = ["EPICODE", "is", "great"]
 
-function lunghezzaString(array){
-  let lunghezza =array.map(stringa => stringa.length);
-return lunghezza;
+function lunghezzaString(array) {
+  let lunghezza = array.map(stringa => stringa.length);
+  return lunghezza;
 
 }
 
@@ -134,21 +134,21 @@ console.log(fine)
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
- 
+
 function Dispari() {
   var ArrayDispari = [];
 
   for (let i = 1; i <= 99; i++) {
-      if (i % 2 !== 0) {
-          ArrayDispari.push(i);
-      }
+    if (i % 2 !== 0) {
+      ArrayDispari.push(i);
+    }
   }
 
   return ArrayDispari;
 }
 
-const risultatoDispari = Dispari(); 
-console.log("Numeri dispari da 1 a 99:", risultatoDispari); 
+const risultatoDispari = Dispari();
+console.log("Numeri dispari da 1 a 99:", risultatoDispari);
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
@@ -269,6 +269,23 @@ const movies = [
 /* ESERCIZIO 9 (forEach)
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
+
+
+function trovaFilmPiuVecchio(films) {
+
+  let filmPiuVecchio = null;
+  films.forEach(film => {
+    const annoFilmCorrente = parseInt(film.Year);
+    if (!filmPiuVecchio || annoFilmCorrente < parseInt(filmPiuVecchio.Year)) {
+      filmPiuVecchio = film;
+    }
+  });
+
+  return filmPiuVecchio;
+}
+const filmPiuVecchio = trovaFilmPiuVecchio(movies);
+console.log("Film più vecchio:", filmPiuVecchio);
+
 
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
