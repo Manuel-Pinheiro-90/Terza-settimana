@@ -63,15 +63,13 @@ function sommaAr(array) {
   let somma = 0;
   array.forEach(numero => {
     somma += numero;
-
   });
-
   return somma;
-
 }
 
 var numeri = [1, 2, 3, 4, 5, 6, 7, 8]
 const risultatoSomma = sommaAr(numeri);
+
 console.log("somma è", risultatoSomma)
 
 
@@ -123,9 +121,7 @@ var odio = ["EPICODE", "is", "great"]
 function lunghezzaString(array) {
   let lunghezza = array.map(stringa => stringa.length);
   return lunghezza;
-
 }
-
 var fine = lunghezzaString(odio)
 console.log(fine)
 
