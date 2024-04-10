@@ -1,0 +1,90 @@
+
+/*body messo a tutta pagina per non sminchiare lo sfondo */
+
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(58,75,180);
+background: linear-gradient(180deg, rgba(58,75,180,1) 17%, rgba(199,60,201,1) 100%);
+    color: #333;
+    margin: 0;
+    height: 100vh;
+}
+
+/* sfondo generale del form fatto come viene viene*/
+#sfondo-form {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #c4bcca; 
+    border-radius: 8px;
+    text-align: center; 
+    position: absolute; /* metodo alternativo senza flex sperando funzioni*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* altro bddk*/
+}
+
+#moduloTask {
+    display: inline-block; 
+    text-align: left; 
+    margin-bottom: 20px;
+}
+
+#inputTask {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #362929;
+    border-radius: 4px 0 0 4px;
+    width: 60%; 
+}
+
+
+
+
+
+#moduloTask button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background-color: white;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+li:hover {
+    background-color: #f0f0f0;
+}
+
+li.completato {
+    text-decoration: line-through;
+}
+
+button.delete {
+    
+    position: absolute; 
+    top: 50%; 
+    right: 10px; /* roba cercata online che senza flex box smattavo */
+    transform: translateY(-50%); 
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: tomato;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
