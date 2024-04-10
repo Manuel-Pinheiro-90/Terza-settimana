@@ -1,6 +1,6 @@
 
 
-//faccio partire  listnern, parte quando la pagina è stata caricata 'DOMContentLoaded'
+//faccio partire  listner, parte quando la pagina è stata caricata 'DOMContentLoaded'
 
 document.addEventListener('DOMContentLoaded', function () {  
     const moduloTask = document.getElementById('moduloTask');
@@ -42,7 +42,7 @@ const iconaCestino = document.createElement('i');
             elementoTask.classList.toggle('completato');// mi devo ricordare  che toggle toglie e mette la roba 
         });
 
-        elementoTask.appendChild(bottoneElimina); //e cosi butto il bottone nella tasc creata 
+        elementoTask.appendChild(bottoneElimina); //e cosi butto il bottone nella task creata 
         listaTask.appendChild(elementoTask); //questo mi appende sto bambino alla lista Task su html
     }
 
