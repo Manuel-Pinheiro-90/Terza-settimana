@@ -8,12 +8,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const listaTask = document.getElementById('listaTask');
 
 
-    moduloTask.addEventListener('submit', function (event) {
-        event.preventDefault();
+    moduloTask.addEventListener('submit', function (event) {//al sub  
+        event.preventDefault(); //previene comportamento di def del form
         const testoTask = inputTask.value.trim(); //trim mi rimuove gli spazzi vuoti
         if (testoTask !== '') { //questo mi controlla che non è vuoto,  se non è vuoto mi aggiunge il task a regola
             aggiungiTask(testoTask);
-            inputTask.value = ''; //dopo di che mi si resetta con la valeu ='' ovvero vuoto
+            inputTask.value = ''; // mi si resetta con la valeu ='' ovvero vuoto
         }
     });
 //questo mi va a creare gli elementi  li=task oioi maronn
@@ -46,7 +46,8 @@ const iconaCestino = document.createElement('i');
         listaTask.appendChild(elementoTask); //questo mi appende sto bambino alla lista Task su html
     }
 
-    
+    //non FUNZIONA BENE essendo tutto in un unica funzione basta un errore per sminchiare tutto.
+    //falle in funzioni diverse
     
     ///HO SCOPIAZZATO A DESTRA A MANCA CHE SI SAPPIA!!!!!!!
     

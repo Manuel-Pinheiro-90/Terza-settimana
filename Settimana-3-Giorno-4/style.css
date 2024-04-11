@@ -1,0 +1,50 @@
+
+body{  background: rgb(58,75,180);
+    background: linear-gradient(180deg, rgba(58,75,180,1) 17%, rgba(199,60,201,1) 100%);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+}
+
+h1{color: #ccc;}
+
+#container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; 
+}
+
+main {
+    overflow: hidden; 
+}
+
+#Tabellone {
+    margin: 0 auto; 
+}
+
+.casella {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius:50%;
+    font-size: 16px;
+    line-height: 40px;
+    background-color: white;
+ }
+
+button#Estrazione {
+    display: inline-block; 
+    margin-top: 20px; 
+}
+
+/* Stile per casella selezionata */
+
+.casella.selezionata {
+    background-color: rgb(43, 48, 49); /* Cambia il colore di sfondo della casella quando selezionata */
+    color: white; /* Cambia il colore del testo della casella quando selezionata */
+    font-weight: bold; /* Applica il grassetto al testo della casella quando selezionata */
+}
